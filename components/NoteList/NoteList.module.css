@@ -1,22 +1,23 @@
 .list {
+  min-height: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
-  padding: 0;
+  gap: 30px;
+  padding: 35px 0;
   margin: 0;
-  list-style: none;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .listItem {
   background-color: #ffffff;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 34px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 180px;
+  min-height: 140px;
+  box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.01);
 }
 
 .title {
@@ -33,7 +34,6 @@
   color: #495057;
   margin-bottom: 12px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -45,7 +45,7 @@
   color: #fff;
   background-color: #dc3545;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -65,9 +65,9 @@
   display: inline-block;
   padding: 4px 8px;
   font-size: 12px;
-  color: #0d6efd;
-  background-color: #e7f1ff;
-  border: 1px solid #b6d4fe;
+  color: black;
+  background-color: #e9ecef;
+  border: 1px solid rgba(208, 208, 208, 0.47);
   border-radius: 12px;
   max-width: 100px;
   white-space: nowrap;
@@ -79,10 +79,10 @@
   align-self: flex-end;
   padding: 6px 12px;
   font-size: 14px;
-  color: #fff;
-  background-color: #0d6efd; /* синій колір */
+  color: black;
+  background-color: #fabb18;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -90,5 +90,5 @@
 }
 
 .link:hover {
-  background-color: #0b5ed7;
+  background-color: #edaa00;
 }

@@ -5,19 +5,19 @@
 }
 
 .menuItem {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .menuLink {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 16px;
   display: block;
-  padding: 8px 16px;
-  transition: background-color 0.3s ease;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
 }
 
 .menuLink:hover {
-  background-color: #444;
-  color: #ddd;
+  background-color: #fabb18;
 }

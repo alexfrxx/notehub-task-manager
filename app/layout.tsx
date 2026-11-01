@@ -47,7 +47,7 @@ export default function RootLayout({ children, modal }: LayoutProps) {
               {children}
               {modal}
             </main>
-            <Footer />
+            {/* <Footer /> */}
           </AuthProvider>
         </TanStackProvider>
       </body>

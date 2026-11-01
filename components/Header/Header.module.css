@@ -1,21 +1,25 @@
 .header {
+  position: relative;
+}
+
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .header a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .header a:hover {
-  color: #ddd;
+  color: #1c1616;
 }
 
 .navigation {
@@ -23,15 +27,16 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 25px;
 }
 
 .navigation li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1rem;
 }
 
 .navigation li a:hover {
-  color: #ddd;
+  color: #1c1616;
 }

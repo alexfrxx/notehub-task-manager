@@ -6,12 +6,17 @@ interface SearchBoxProps {
 
 export default function SearchBox({ onChange }: SearchBoxProps) {
   return (
-    <input
-      onChange={onChange}
-      type="text"
-      name="notes"
-      placeholder="Search notes"
-      className={css.input}
-    />
+    <label className={css.wrapper}>
+      <input
+        onChange={onChange}
+        type="text"
+        name="notes"
+        placeholder="Search notes"
+        className={css.input}
+      />
+      <svg width="18" height="20">
+        <use href="/sprite.svg#finder"></use>
+      </svg>
+    </label>
   );
 }
