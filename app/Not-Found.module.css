@@ -2,13 +2,15 @@
   font-size: 36px;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 60px;
+  margin: 55px 0 0 0;
   text-align: center;
 }
 
 .description {
   font-size: 18px;
-  color: #444444;
+  color: black;
   line-height: 28px;
+  font-weight: 600;
   margin-bottom: 16px;
+  text-align: center;
 }
