@@ -36,3 +36,15 @@
 .navigationLink:hover {
   color: #ddd;
 }
+
+@media (max-width: 767px) {
+  .logoutButton {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .navigationLink {
+    font-size: 0.875rem;
+  }
+}

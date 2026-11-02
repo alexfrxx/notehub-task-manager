@@ -1,4 +1,6 @@
-import ReactPaginateModule from 'react-paginate';
+'use client';
+
+import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
 import css from './Pagination.module.css';
@@ -14,11 +16,21 @@ export default function Pagination({
   onPageChange,
   forcePage
 }: PaginationProps) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 767px)');
+    const onChange = () => setIsMobile(media.matches);
+    onChange();
+    media.addEventListener('change', onChange);
+    return () => media.removeEventListener('change', onChange);
+  }, []);
+
   return (
     <ReactPaginate
       pageCount={pageCount}
       onPageChange={onPageChange}
-      pageRangeDisplayed={5}
+      pageRangeDisplayed={isMobile ? 1 : 5}
       nextLabel="→"
       previousLabel="←"
       activeClassName={css.active}

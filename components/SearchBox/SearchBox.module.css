@@ -17,3 +17,10 @@
   background: transparent;
   outline: none;
 }
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: none;
+    width: 100%;
+  }
+}

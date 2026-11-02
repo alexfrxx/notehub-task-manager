@@ -92,3 +92,23 @@
 .link:hover {
   background-color: #edaa00;
 }
+
+@media (max-width: 767px) {
+  .list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .listItem {
+    height: auto;
+    min-height: 140px;
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

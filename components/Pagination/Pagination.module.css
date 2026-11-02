@@ -46,3 +46,20 @@
 .active a {
   font-weight: 500;
 }
+
+@media (max-width: 767px) {
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .pagination li {
+    min-width: 32px;
+    height: 32px;
+  }
+
+  .pagination li a {
+    font-size: 13px;
+  }
+}

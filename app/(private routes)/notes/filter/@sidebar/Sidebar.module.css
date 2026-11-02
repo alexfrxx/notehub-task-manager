@@ -36,3 +36,25 @@
 .active:hover {
   background-color: black;
 }
+
+@media (max-width: 767px) {
+  .menuList {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .menuItem {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .menuLink,
+  .active {
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

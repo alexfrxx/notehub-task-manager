@@ -40,3 +40,30 @@
 .navigation li a:hover {
   color: #1c1616;
 }
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 0.75rem 1rem;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .header svg {
+    width: 100px;
+    height: 21px;
+  }
+
+  .header a {
+    font-size: 1.25rem;
+  }
+
+  .navigation {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .navigation li a {
+    font-size: 0.875rem;
+  }
+}

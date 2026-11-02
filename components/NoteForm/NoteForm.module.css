@@ -77,3 +77,25 @@
   font-size: 12px;
   margin-top: 4px;
 }
+
+@media (max-width: 767px) {
+  .formGroup {
+    font-size: 16px;
+  }
+
+  .input,
+  .textarea,
+  .select {
+    font-size: 16px;
+  }
+
+  .actions {
+    flex-direction: column-reverse;
+  }
+
+  .submitButton,
+  .cancelButton {
+    width: 100%;
+    text-align: center;
+  }
+}

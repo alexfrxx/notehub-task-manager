@@ -16,3 +16,15 @@
   margin-bottom: 60px;
   text-align: center;
 }
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 16px 24px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}

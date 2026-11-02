@@ -1,5 +1,5 @@
 import { Roboto } from 'next/font/google';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import TanStackProvider from '@/components/TanStackProvider/TanStackProvider';
 import Header from '@/components/Header/Header';
@@ -12,6 +12,11 @@ const roboto = Roboto({
   weight: ['400', '700'],
   display: 'swap'
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1
+};
 
 export const metadata: Metadata = {
   title: 'Create Next App',
