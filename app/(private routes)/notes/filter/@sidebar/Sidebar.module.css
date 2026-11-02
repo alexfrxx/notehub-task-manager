@@ -18,7 +18,11 @@
   transition: all 0.4s ease;
 }
 
-.defaultLink {
+.menuLink:hover {
+  background-color: #fabb18;
+}
+
+.active {
   text-decoration: none;
   color: white;
   background-color: black;
@@ -29,6 +33,6 @@
   transition: all 0.4s ease;
 }
 
-.menuLink:hover {
-  background-color: #fabb18;
+.active:hover {
+  background-color: black;
 }
