@@ -3,14 +3,18 @@
   margin: 32px auto;
   padding: 24px;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 34px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .item {
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 34px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  justify-content: space-between;
+  box-shadow: 0 16px 31px 0 rgba(0, 0, 0, 0.01);
 }
 
 .header {
@@ -44,9 +48,9 @@
   display: inline-block;
   padding: 4px 8px;
   font-size: 12px;
-  color: #0d6efd;
-  background-color: #e7f1ff;
-  border: 1px solid #b6d4fe;
+  color: black;
+  background-color: #e9ecef;
+  border: 1px solid rgba(208, 208, 208, 0.47);
   border-radius: 12px;
   max-width: 100px;
   white-space: nowrap;
@@ -55,14 +59,17 @@
 }
 
 .backBtn {
-  align-self: flex-start;
+  align-self: flex-end;
   padding: 6px 12px;
   font-size: 14px;
-  color: #000000;
+  color: #fff;
+  background-color: #dc3545;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
   cursor: pointer;
-  text-decoration: underline;
-  display: inline-block;
-  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.backBtn:hover {
+  background-color: #bb2d3b;
 }
