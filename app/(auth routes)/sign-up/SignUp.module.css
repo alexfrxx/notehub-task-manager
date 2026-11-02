@@ -82,9 +82,7 @@
 
 @media (max-width: 767px) {
   .form {
-    margin: 24px 16px;
-    padding: 20px 16px;
-    border-radius: 24px;
+    max-width: 300px;
   }
 
   .formTitle {
