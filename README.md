@@ -4,6 +4,8 @@ A modern task management web application built with **Next.js and TypeScript**, 
 
 The application uses a REST API for data communication, Axios for HTTP requests, Zustand for global state management, and cookie-based authentication to handle user sessions securely.
 
+<img width="1440" height="811" alt="Снимок экрана 2026-11-04 в 17 21 31" src="https://github.com/user-attachments/assets/731ef0f8-0cf8-4755-adff-79637573199b" />
+
 ## Live Demo
 
 [https://09-auth-eight-lime.vercel.app](https://09-auth-eight-lime.vercel.app)
