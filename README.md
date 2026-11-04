@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 TASKY — Task Manager
 
-## Getting Started
+A modern task management web application built with **Next.js and TypeScript**, designed to help users organize, manage, and keep track of their tasks through a clean and responsive interface.
 
-First, run the development server:
+The application uses a REST API for data communication, Axios for HTTP requests, Zustand for global state management, and cookie-based authentication to handle user sessions securely.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Live Demo
+
+[https://09-auth-eight-lime.vercel.app](https://09-auth-eight-lime.vercel.app)
+
+## Features
+
+- Create, manage, and organize tasks
+- User authentication and authorization
+- Cookie-based authentication and session management
+- REST API integration using **Axios**
+- Server-state management with **TanStack React Query**
+- Global state management with **Zustand**
+- Pagination for task and note listings
+- Filtering and searching through tasks
+- Debounced search for optimized API requests
+- Automatic data fetching and caching
+- Protected routes and session validation
+- Responsive design for different screen sizes
+- Loading and error states
+
+## Tech Stack
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Axios**
+- **Zustand**
+- **REST API**
+- **Cookies**
+- **React Paginate**
+- **use-debounce**
+- **CSS Modules**
+
+## 🧠 What I Practiced
+
+This project helped me practice working with:
+
+- Next.js App Router and application architecture
+- Server-side rendering (SSR)
+- Client and server components
+- REST API integration
+- Asynchronous data fetching with Axios
+- Server-state management with React Query
+- Query caching and data synchronization
+- Global state management with Zustand
+- Cookie-based authentication
+- Access and refresh token handling
+- Protected routes and session management
+- TypeScript interfaces and type safety
+- Pagination and debounced search
+- Component composition and reusable UI
+- Separation of concerns and maintainable code
+
+## 📂 Project Structure
+
+The project is organized into application routes, reusable components, utility functions, and TypeScript types to maintain a clean and scalable codebase.
+
+```text
+src/
+├── app/
+│   ├── (auth)/
+│   ├── (private routes)/
+│   └── ...
+│
+├── components/
+│   ├── ...
+│
+├── lib/
+│   ├── ...
+│
+├── public/
+│
+├── types/
+│   └── ...
+│
+├── proxy.ts
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API & Authentication
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application communicates with a backend through a **REST API**, using Axios to handle HTTP requests and responses.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Authentication is implemented using cookies, with access and refresh token handling to manage user sessions. Protected routes are validated through server-side session checks.
 
-## Learn More
+**TanStack React Query** handles server-state management, including data fetching, caching, and synchronization, while Zustand manages global application state.
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Project Status
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is actively being improved as part of my ongoing **Next.js and TypeScript learning journey**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ using **Next.js, TypeScript and REST API**.
